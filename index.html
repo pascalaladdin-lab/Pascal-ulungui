@@ -11,8 +11,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
         }
         .card {
             background: white;
@@ -20,25 +21,47 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
+            max-width: 400px;
+            width: 100%;
         }
         h1 { color: #1877f2; }
         p { color: #555; }
-    </style> </head> <body> <div 
-    class="card">
-        <h1>Bienvenue sur mon site 
-        !</h1>
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            text-decoration: none;
+            background-color: #1877f2;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .btn-green {
+            background-color: #42b72a;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Bienvenue sur mon site !</h1>
         
-        <div style="margin: 20px 0;"> 
-            <img 
-            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500"
-                 alt="Ordinateur et 
-                 code" style="width: 
-                 100%; max-width: 400px; 
-                 border-radius: 10px; 
-                 box-shadow: 0 4px 6px 
-                 rgba(0,0,0,0.1);">
-        </div> <p>Ceci est ma première 
-        page web hébergée sur 
-        GitHub.</p> <p>Créé avec passion 
-        sur Termux.</p>
-    </div> </body>
+        <div style="margin: 20px 0;">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" 
+                 alt="Ordinateur et code" 
+                 style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        </div>
+
+        <p>Ceci est ma première page web hébergée sur GitHub.</p>
+        <p>Créé avec passion sur Termux.</p>
+
+        <div class="btn-container">
+            <a href="https://www.tiktok.com" class="btn">Suivez-moi sur TikTok</a>
+            <a href="https://github.com/pascalaladdin-lab" class="btn btn-green">Mon profil GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
