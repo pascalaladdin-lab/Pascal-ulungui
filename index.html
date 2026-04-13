@@ -5,63 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Pascal</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%; }
         h1 { color: #1877f2; }
-        p { color: #555; }
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .btn {
-            text-decoration: none;
-            background-color: #1877f2;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-        .btn-green {
-            background-color: #42b72a;
-        }
+        .btn-container { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        .btn { text-decoration: none; background-color: #1877f2; color: white; padding: 12px; border-radius: 8px; font-weight: bold; display: block; }
+        .btn-green { background-color: #42b72a; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Bienvenue sur mon site !</h1>
-        
-        <div style="margin: 20px 0;">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" 
-                 alt="Ordinateur et code" 
-                 style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        </div>
-
-        <p>Ceci est ma première page web hébergée sur GitHub.</p>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" alt="Ordinateur" style="width:100%; border-radius:10px;">
         <p>Créé avec passion sur Termux.</p>
-
-                 <div class="btn-container">
+        <div class="btn-container">
             <a href="propos.html" class="btn" style="background-color: #6c757d;">Qui suis-je ?</a>
             <a href="galerie.html" class="btn" style="background-color: #f39c12;">Voir ma galerie</a>
             <a href="https://www.tiktok.com" class="btn">TikTok</a>
             <a href="https://github.com/pascalaladdin-lab" class="btn btn-green">GitHub</a>
         </div>
+    </div>
+</body>
+</html>
 
